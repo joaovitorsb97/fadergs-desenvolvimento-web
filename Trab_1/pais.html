@@ -1,42 +1,61 @@
 <html>
+
+<head>
+    <meta name="viewport" content=" width = device-width,
+            initial-scale = 1.0, user-scalable= no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
 <body>
-<h2>Trabalho front-end</h2>
-<h3>País</h3>
-    <form>
-        <label for="txNomePaís">Nome:</label>
-        <br/><input type="text" name="txNomePaís" id="idNomePaís">
+    <div class="container border">
+        <br>
+        <h3>País</h3>
+        <form>
+            <label for="txNomePaís">Nome:</label>
+            <input type="text" name="txNomePaís" class="form-control" placeholder="Digite nome do país">
+            <br>
+            <label>Sigla:</label>
+            <select id="idSigla" name="Sigla" class="form-select">
+                <option>BR</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>JPN</option>
+                <option>CH</option>
+            </select>
 
-        
-        <br/><label>Sigla:</label>
-        <br/><select id="idSigla" name="Sigla">
-            <option>BR</option>
-            <option>USA</option>
-            <option>UK</option>
-            <option>JPN</option>
-            <option>CH</option>
-        </select>
+            
+            <br /><button type="reset" class="btn btn-secondary">Limpar</button>
 
-        <br/>
-        <br/><input type="reset" value="Limpar">
-        
-        <input type="submit" value="Cadastrar">
-    </form>
+            <button type="reset" class="btn btn-primary">Cadastrar</button>
+        </form>
 
-    <table style="width:100%;border: 1px solid black;">
-        <tr>
-            <th>Nome País</th>
-            <th>Sigla</th>
-        </tr>
+    </div>
 
-        <tr>
-            <td>país</td>
-            <td>sigla</td>
-        </tr>
+    <br>
 
-    </table>
-    <br/>
-    <input type="submit" value="Alterar">
-    <input type="reset" value="Excluir">
+    <div class="container">
+        <table class="table border-dark table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Nome País</th>
+                    <th>Sigla</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>país</td>
+                    <td>sigla</td>
+                </tr>
+            </tbody>
+
+        </table>
+    
+        <button type="reset" class="btn btn-danger">Excluir</button>
+        <button type="reset" class="btn btn-primary">Alterar</button>
+    </div>
+
 
 </body>
+
 </html>
